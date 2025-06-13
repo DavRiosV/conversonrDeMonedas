@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class ConsultaApi {
     public String buscaDivisa(String base, String target) {
         String apiKey = "TU_API_KEY"; // Reemplaza con tu API Key
-        String url = "https://v6.exchangerate-api.com/v6/11b56851098e4a96062395f5/latest/USD" + apiKey + "/pair/" + base + "/" + target;
+        String url = "https://v6.exchangerate-api.com/v6/" + "11b56851098e4a96062395f5" + "/pair/" + base + "/" + target;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
